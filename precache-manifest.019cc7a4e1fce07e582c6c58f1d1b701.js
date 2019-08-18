@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95a556a9345dcf749abc136d883bab3c",
+    "revision": "55e5942831b244269ef38ada8a4608c7",
     "url": "/aevi1103/SimpleLivingOfMishawaka/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aevi1103/SimpleLivingOfMishawaka/static/css/2.31dafeb2.chunk.css"
   },
   {
-    "revision": "260dc6dde07747fdc28c",
-    "url": "/aevi1103/SimpleLivingOfMishawaka/static/css/main.ead41eea.chunk.css"
+    "revision": "5676fc834a3bfdb509a3",
+    "url": "/aevi1103/SimpleLivingOfMishawaka/static/css/main.e80faf83.chunk.css"
   },
   {
     "revision": "df5b2f307409e0d77565",
     "url": "/aevi1103/SimpleLivingOfMishawaka/static/js/2.d6cfe0f6.chunk.js"
   },
   {
-    "revision": "260dc6dde07747fdc28c",
-    "url": "/aevi1103/SimpleLivingOfMishawaka/static/js/main.025f0b18.chunk.js"
+    "revision": "5676fc834a3bfdb509a3",
+    "url": "/aevi1103/SimpleLivingOfMishawaka/static/js/main.c6db53f3.chunk.js"
   },
   {
     "revision": "76e8606660135ed057fb",

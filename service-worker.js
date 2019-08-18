@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/aevi1103/SimpleLivingOfMishawaka/precache-manifest.a5c196a6184463377724add2cbbee849.js"
+  "/aevi1103/SimpleLivingOfMishawaka/precache-manifest.019cc7a4e1fce07e582c6c58f1d1b701.js"
 );
 
 self.addEventListener('message', (event) => {
