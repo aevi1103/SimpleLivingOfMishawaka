@@ -7,13 +7,10 @@ import{
 } from "reactstrap";
 // core components
 
-import Services from './services.component'
-import ScrollableAnchor from 'react-scrollable-anchor';
-
 const AboutUs = () => {
     
     return (
-      <div className="section section-about-us">
+      <div className="section section-about-us" id="aboutsection">
         <Container>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
@@ -29,49 +26,6 @@ const AboutUs = () => {
               </h5>
             </Col>
           </Row>
-          <div className="separator separator-primary" />
-          <div className="section-story-overview">
-            <Row>
-              <Col md="6">
-                <div
-                  className="image-container image-left"
-                  style={{
-                    backgroundImage:
-                      "url(" +
-                      require("assets/img/living-care/loc1.jpg") +
-                      ")"
-                  }}
-                />
-                <div
-                  className="image-container"
-                  style={{
-                    backgroundImage:
-                      "url(" +
-                      require("assets/img/living-care/loc2.jpg") +
-                      ")"
-                  }}
-                />
-              </Col>
-
-              <Col md="5">
-                <ScrollableAnchor id={"sevicesection"}>
-                  <span style={{ visibility: "hidden" }}>about</span>
-                </ScrollableAnchor>
-
-                <div
-                  className="image-container image-right"
-                  style={{
-                    backgroundImage:
-                      "url(" +
-                      require("assets/img/living-care/loc3.jpg") +
-                      ")"
-                  }}
-                />
-
-                <Services />
-              </Col>
-            </Row>
-          </div>
         </Container>
       </div>
     );

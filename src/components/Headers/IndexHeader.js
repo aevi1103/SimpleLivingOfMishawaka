@@ -38,7 +38,7 @@ function IndexHeader() {
               className="n-logo"
               src={require("assets/img/now-logo.png")}
             ></img>
-            <h1 className="h1-seo">Simple Living of Mishawaka</h1>
+            <h1 className="h1-seo display-1 fo">Simple Living of Mishawaka</h1>
             <h3>Residential Assited Living Care Facility</h3>
             
           </div>

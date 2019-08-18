@@ -1,7 +1,7 @@
 import React from 'react'
 
-import{
-    Button,
+import {
+  Button,
   Input,
   InputGroupAddon,
   InputGroupText,
@@ -18,10 +18,12 @@ const ContactUs = () => {
     const [subjFocus, setsubjFocus] = React.useState(false);
 
     return (
-      <div className="section section-contact-us">
+      <div className="section section-contact-us" id="contactussection">
         <Row>
           <Col className="text-center ml-auto mr-auto" lg="6" md="8">
-            <h2 className="title">Contact Us</h2>
+
+          <h2 className="title">Contact Us</h2>
+
             <InputGroup
               className={
                 "input-lg" + (firstFocus ? " input-group-focus" : "")

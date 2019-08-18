@@ -1,16 +1,11 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import smoothscroll from 'smoothscroll-polyfill';
 
 // reactstrap components
 import {
-  Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -20,9 +15,15 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-function IndexNavbar() {
+// import { goToAnchor } from 'react-scrollable-anchor'
+
+const IndexNavbar = () => {
+
+  smoothscroll.polyfill();
+
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -42,6 +43,15 @@ function IndexNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
+  const gotoSection = (e, id, isTop) => {
+    if (!isTop) {
+      document.querySelector(`#${id}`).scrollIntoView({behavior: 'smooth'});
+    } else {
+      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+    }
+  }
+
   return (
     <>
       {collapseOpen ? (
@@ -61,7 +71,7 @@ function IndexNavbar() {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand font-weight-bold">Logo</NavbarBrand>
+            <NavbarBrand id="navbar-brand font-weight-bold" onClick={e => gotoSection(e, null, true)} href="#">Logo</NavbarBrand>
 
             <button
               className="navbar-toggler navbar-toggler"
@@ -85,44 +95,28 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink href="#aboutsection">
+                <NavLink href="#" onClick={e => gotoSection(e, 'aboutsection')}>
                   <i className="now-ui-icons business_badge" />
                   <p>ABOUT US</p>
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="#sevicesection">
+                <NavLink href="#" onClick={e => gotoSection(e, 'servicesection')}>
                   <i className="now-ui-icons business_briefcase-24" />
                   <p>OUR SERVICES</p>
                 </NavLink>
               </NavItem>
 
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app mr-1" />
-                  <p>Gallerry</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1" />
-                    Gallery 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    <i className="now-ui-icons design_bullet-list-67 mr-1" />
-                    Gallery 2
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="#" onClick={e => gotoSection(e, 'gallerysection')}>
+                  <i className="now-ui-icons business_briefcase-24" />
+                  <p>GALLERY</p>
+                </NavLink>
+              </NavItem>
 
               <NavItem>
-                <NavLink href="#contactussection">
+                <NavLink href="#" onClick={e => gotoSection(e, 'contactussection')}>
                   <i className="now-ui-icons ui-1_send" />
                   <p>CONTACT US</p>
                 </NavLink>
@@ -137,6 +131,7 @@ function IndexNavbar() {
                   Like us on Facebook
                 </UncontrolledTooltip>
               </NavItem>
+
             </Nav>
           </Collapse>
         </Container>

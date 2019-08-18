@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 
 function DarkFooter() {
   return (
-    <footer className="footer" data-background-color="black">
+    <footer className="footer text-center" data-background-color="black">
       <Container>
         <nav>
           <ul>
@@ -15,7 +15,15 @@ function DarkFooter() {
                 href="#"
                 target="_blank"
               >
-                Simple Living of Mishawaka Assisted Living Care Facility
+                Simple Living of Mishawaka
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+              >
+                Assisted Living Care Facility
               </a>
             </li>
             <li>
@@ -28,7 +36,7 @@ function DarkFooter() {
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          © {new Date().getFullYear()}, Designed by{" "}
+          © {new Date().getFullYear()}, Developed by{" "}
           <a
             href="#"
             target="_blank"

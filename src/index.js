@@ -28,11 +28,11 @@ import "assets/demo/nucleo-icons-page-styles.css";
 import 'tachyons'
 
 // pages for this kit
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+// import Index from "views/Index.js";
+// import NucleoIcons from "views/NucleoIcons.js";
+// import LoginPage from "views/examples/LoginPage.js";
+// import LandingPage from "views/examples/LandingPage.js";
+// import ProfilePage from "views/examples/ProfilePage.js";
 
 import HomePage from './pages/homepage/homepage.components'
 
@@ -40,28 +40,26 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Switch>
+        <Route path="/index" component={HomePage} />} />
 
-        <Route path="/index" render={props => <HomePage {...props} />} />
+       { /* <Route
+          path="/nucleo-icons"
+          render={props => <NucleoIcons {...props} />}
+        />
+        <Route
+          path="/landing-page"
+          render={props => <LandingPage {...props} />}
+        />
+        <Route
+          path="/profile-page"
+          render={props => <ProfilePage {...props} />}
+        />
+        <Route path="/login-page" render={props => <LoginPage {...props} />} />
 
-      {/* <Route
-        path="/nucleo-icons"
-        render={props => <NucleoIcons {...props} />}
-      />
-      <Route
-        path="/landing-page"
-        render={props => <LandingPage {...props} />}
-      />
-      <Route
-        path="/profile-page"
-        render={props => <ProfilePage {...props} />}
-      />
-      <Route path="/login-page" render={props => <LoginPage {...props} />} />
+        <Route exact path="/homepage" component={HomePage} /> */}
 
-      <Route exact path="/homepage" component={HomePage} /> */}
-        
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
-
       </Switch>
     </Switch>
   </BrowserRouter>,

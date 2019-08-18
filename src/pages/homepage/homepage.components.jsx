@@ -10,25 +10,12 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter";
 
-// sections for this page
-import Images from '../../views/index-sections/Images'
-// import BasicElements from "./index-sections/BasicElements.js";
-// import Navbars from "./index-sections/Navbars.js";
-// import Tabs from "./index-sections/Tabs.js";
-// import Pagination from "./index-sections/Pagination.js";
-// import Notifications from "./index-sections/Notifications.js";
-// import Typography from "./index-sections/Typography.js";
-// import Javascript from "./index-sections/Javascript.js";
-import Carousel from "../../views//index-sections/Carousel.js";
-// import NucleoIcons from "./index-sections/NucleoIcons.js";
-// import CompleteExamples from "./index-sections/CompleteExamples.js";
-// import SignUp from "./index-sections/SignUp.js";
-// import Examples from "./index-sections/Examples.js";
-// import Download from "./index-sections/Download.js";
-
 import AboutUs from './sections/about-us.component'
 import ContactUs from "./sections/contact-us.component";
 import Team from "./sections/team.component"
+import Services from "./sections/services.component"
+
+import ImageGallery  from './sections/gallery.component'
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 
@@ -51,18 +38,16 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
+
+          <ImageGallery />
+
           <Container>
-            <ScrollableAnchor id={'aboutsection'}>
-              <span style={{visibility: 'hidden'}} >about</span>
-            </ScrollableAnchor>
+
             <AboutUs />
-
+            <Services />
             <Team />
-
-            <ScrollableAnchor id={'contactussection'}>
-              <span style={{visibility: 'hidden'}} >about</span>
-            </ScrollableAnchor>
             <ContactUs />
+
           </Container>
         </div>
         <DarkFooter />

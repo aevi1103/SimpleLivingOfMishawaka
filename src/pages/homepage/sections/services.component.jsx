@@ -1,33 +1,45 @@
 import React from 'react'
 
+import{
+  Container,
+  Row,
+  Col
+} from "reactstrap";
+
 const Services = () => {
     return (
-      <div>
-        <h3>Our Services</h3>
-        <p>
-          <b>Service 1</b> Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua. Elit
-        </p>
-        <p>
-          <b>Service 2</b> Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed d
-        </p>
-        <p>
-          <b>Service 3</b> Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-        </p>
-        <p>
-          <b>Service 4</b> Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-        </p>
-        <p>
-          <b>Service 5</b> Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua.
-        </p>
+      <div className="section section-services" id="servicesection">
+        <Container>
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="8">
+              <h2 className="title">Our Services</h2>
+              <p>
+                <i className="now-ui-icons ui-1_check mr-2" />
+                <b>Service 1</b>
+              </p>
+              <p>
+                <i className="now-ui-icons ui-1_check mr-2" />
+                <b>Service 2</b>
+              </p>
+              <p>
+                <i className="now-ui-icons ui-1_check mr-2" />
+                <b>Service 3</b>
+              </p>
+              <p>
+                <i className="now-ui-icons ui-1_check mr-2" />
+                <b>Service 4</b>
+              </p>
+              <p>
+                <i className="now-ui-icons ui-1_check mr-2" />
+                <b>Service 5</b>
+              </p>
+              <p>
+                <i className="now-ui-icons ui-1_check mr-2" />
+                <b>Service 6</b>
+              </p>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
 }
