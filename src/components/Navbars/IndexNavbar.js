@@ -1,5 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
+import { Link, animateScroll as scroll } from "react-scroll";
+
 // reactstrap components
 import {
   Button,
@@ -51,14 +54,14 @@ function IndexNavbar() {
         />
       ) : null}
 
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="white">
+      <Navbar
+        className={"fixed-top " + navbarColor}
+        expand="lg"
+        color="white"
+      >
         <Container>
-
           <div className="navbar-translate">
-
-            <NavbarBrand id="navbar-brand font-weight-bold">
-              Logo
-            </NavbarBrand>
+            <NavbarBrand id="navbar-brand font-weight-bold">Logo</NavbarBrand>
 
             <button
               className="navbar-toggler navbar-toggler"
@@ -82,14 +85,14 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink to="/about" tag={Link}>
+                <NavLink href="#aboutsection">
                   <i className="now-ui-icons business_badge" />
                   <p>ABOUT US</p>
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink >
+                <NavLink href="#sevicesection">
                   <i className="now-ui-icons business_briefcase-24" />
                   <p>OUR SERVICES</p>
                 </NavLink>
@@ -107,7 +110,7 @@ function IndexNavbar() {
                   <p>Gallerry</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to="/landing-page" tag={Link}>
+                  <DropdownItem>
                     <i className="now-ui-icons business_chart-pie-36 mr-1" />
                     Gallery 1
                   </DropdownItem>
@@ -119,18 +122,14 @@ function IndexNavbar() {
               </UncontrolledDropdown>
 
               <NavItem>
-                <NavLink tag={Link} to="/contact" >
+                <NavLink href="#contactussection">
                   <i className="now-ui-icons ui-1_send" />
                   <p>CONTACT US</p>
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
+                <NavLink target="_blank" id="facebook-tooltip">
                   <i className="fab fa-facebook-square" />
                   <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
@@ -138,11 +137,8 @@ function IndexNavbar() {
                   Like us on Facebook
                 </UncontrolledTooltip>
               </NavItem>
-
-
             </Nav>
           </Collapse>
-
         </Container>
       </Navbar>
     </>

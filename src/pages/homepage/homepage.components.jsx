@@ -1,8 +1,9 @@
 import React from "react";
 
 // reactstrap components
-// import {
-// } from "reactstrap";
+import {
+  Container
+} from "reactstrap";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -27,6 +28,10 @@ import Carousel from "../../views//index-sections/Carousel.js";
 
 import AboutUs from './sections/about-us.component'
 import ContactUs from "./sections/contact-us.component";
+import Team from "./sections/team.component"
+
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 
 function Index() {
   React.useEffect(() => {
@@ -46,8 +51,19 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-            <AboutUs/>
-            <ContactUs/>
+          <Container>
+            <ScrollableAnchor id={'aboutsection'}>
+              <span style={{visibility: 'hidden'}} >about</span>
+            </ScrollableAnchor>
+            <AboutUs />
+
+            <Team />
+
+            <ScrollableAnchor id={'contactussection'}>
+              <span style={{visibility: 'hidden'}} >about</span>
+            </ScrollableAnchor>
+            <ContactUs />
+          </Container>
         </div>
         <DarkFooter />
       </div>
