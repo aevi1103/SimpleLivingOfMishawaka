@@ -5,8 +5,18 @@ import React from "react";
 import { Container } from "reactstrap";
 // core components
 
+import desktopImage from '../../assets/img/living-care/desktop-image.jpg'
+import mobileImage from '../../assets/img/living-care/mobile-image.jpg'
+
 function IndexHeader() {
+
   let pageHeader = React.createRef();
+
+  const [windowWidth, setWindowWidth ] = React.useState(window.innerWidth);
+  const imageUrl = windowWidth >= 650 ? desktopImage : mobileImage;
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
 
   React.useEffect(() => {
 
@@ -25,7 +35,15 @@ function IndexHeader() {
         window.removeEventListener("scroll", updateScroll);
       };
     }
+
   });
+
+  React.useEffect(() => {
+    window.addEventListener('resize', handleWindowResize);
+    return () => {
+        window.removeEventListener('resize', handleWindowResize);
+    }
+  })
 
   return (
     <>
@@ -33,7 +51,7 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/living-care/old.jpg") + ")"
+            backgroundImage: `url(${imageUrl})`
           }}
           ref={pageHeader}></div>
         <Container>

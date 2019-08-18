@@ -19,8 +19,6 @@ const ContactUs = () => {
     const [phoneFocus, setLphoneFocus] = React.useState(false);
     const [subjFocus, setsubjFocus] = React.useState(false);
 
-    
-
     return (
       <div className="section section-contact-us" id="contactussection">
         <Row>

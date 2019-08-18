@@ -2,9 +2,7 @@ import React from "react";
 
 // reactstrap components
 import {
-  Container,
-  Col,
-  Row
+  Container
 } from "reactstrap";
 
 // core components
@@ -18,9 +16,6 @@ import Team from "./sections/team.component"
 import Services from "./sections/services.component"
 
 import ImageGallery  from './sections/gallery.component'
-
-import GoogleMap from './sections/map.component'
-
 
 function Index() {
   React.useEffect(() => {
