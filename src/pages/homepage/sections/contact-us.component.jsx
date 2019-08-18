@@ -137,9 +137,10 @@ const ContactUs = () => {
 
             <p className="category text-info mb-0 mt-2">Email Us</p>
             <p className="">maynard.utayde@gmail.com</p>
+            
           </Col>
 
-          <Col className="mt-3" style={{height: '600px'}} >
+          <Col className="mt-3" style={{height: '600px'}}>
               <GoogleMap/>
           </Col>
         </Row>

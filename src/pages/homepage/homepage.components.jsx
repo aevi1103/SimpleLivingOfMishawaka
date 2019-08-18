@@ -3,7 +3,8 @@ import React from "react";
 // reactstrap components
 import {
   Container,
-  Col
+  Col,
+  Row
 } from "reactstrap";
 
 // core components
