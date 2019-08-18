@@ -15,8 +15,6 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-// import { goToAnchor } from 'react-scrollable-anchor'
-
 const IndexNavbar = () => {
 
   smoothscroll.polyfill();

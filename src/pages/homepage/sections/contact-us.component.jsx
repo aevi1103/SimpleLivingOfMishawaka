@@ -10,12 +10,16 @@ import {
   Col
 } from "reactstrap";
 
+import GoogleMap from './map.component'
+
 const ContactUs = () => {
 
     const [firstFocus, setFirstFocus] = React.useState(false);
     const [lastFocus, setLastFocus] = React.useState(false);
     const [phoneFocus, setLphoneFocus] = React.useState(false);
     const [subjFocus, setsubjFocus] = React.useState(false);
+
+    
 
     return (
       <div className="section section-contact-us" id="contactussection">
@@ -133,6 +137,10 @@ const ContactUs = () => {
 
             <p className="category text-info mb-0 mt-2">Email Us</p>
             <p className="">maynard.utayde@gmail.com</p>
+          </Col>
+
+          <Col className="mt-3" style={{height: '600px'}} >
+              <GoogleMap/>
           </Col>
         </Row>
       </div>

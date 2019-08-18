@@ -2,7 +2,8 @@ import React from "react";
 
 // reactstrap components
 import {
-  Container
+  Container,
+  Col
 } from "reactstrap";
 
 // core components
@@ -17,7 +18,7 @@ import Services from "./sections/services.component"
 
 import ImageGallery  from './sections/gallery.component'
 
-import ScrollableAnchor from 'react-scrollable-anchor';
+import GoogleMap from './sections/map.component'
 
 
 function Index() {
@@ -38,16 +39,13 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-
           <ImageGallery />
 
           <Container>
-
             <AboutUs />
             <Services />
             <Team />
             <ContactUs />
-
           </Container>
         </div>
         <DarkFooter />
