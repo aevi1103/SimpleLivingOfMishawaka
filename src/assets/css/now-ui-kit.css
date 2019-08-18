@@ -4316,7 +4316,7 @@ img {
     .section-story-overview .image-container.image-left {
       z-index: 1; }
     .section-story-overview .image-container:nth-child(2) {
-      margin-top: 420px;
+      margin-top: 200px;
       margin-left: -105px; }
   .section-story-overview p.blockquote {
     width: 220px;
@@ -5942,6 +5942,18 @@ td.rdtYear:hover {
   background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(3, 161, 224, 0.6));
   /* Standard syntax */ }
 
+.clear-filter[filter-color="gray"] {
+  background: rgba(44, 44, 44, 0.1);
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.1), rgba(155, 151, 151, 0.384));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.1), rgba(155, 151, 151, 0.384));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.1), rgba(155, 151, 151, 0.384));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(0deg, rgba(44, 44, 44, 0.1), rgba(155, 151, 151, 0.384));
+  /* Standard syntax */ }
+
 [data-background-color="blue"] {
   background-color: #2CA8FF; }
 
@@ -5955,7 +5967,9 @@ td.rdtYear:hover {
 @media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse:before {
     background: #2CA8FF;
-    background: linear-gradient(#E3E3E3, #DDDDDD 80%); } }
+    background: linear-gradient(#2CA8FF, #2c2c2c 80%); }
+  .navbar-nav .dropdown-menu {
+    position: static !important; } }
 
 @media screen and (max-width: 768px) {
   .nav-tabs {
