@@ -49,7 +49,7 @@ const ImageGallery = () => {
             <Col className='text-center'>
                 <h2 className="title">Our Gallery</h2>
                 {/* <Gallery images={IMAGES} onClick={() => true} /> */}
-                <Gallery items={IMAGES} />
+                <Gallery items={IMAGES} autoPlay={true} />
             </Col>
           </Row>
         </Container>
