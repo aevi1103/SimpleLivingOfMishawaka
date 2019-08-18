@@ -42,12 +42,8 @@ const IndexNavbar = () => {
     };
   });
 
-  const gotoSection = (e, id, isTop) => {
-    if (!isTop) {
-      document.querySelector(`#${id}`).scrollIntoView({behavior: 'smooth'});
-    } else {
-      window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-    }
+  const gotoSection = (e, id) => {
+    document.querySelector(`#${id}`).scrollIntoView({behavior: 'smooth'});
   }
 
   return (
@@ -69,7 +65,7 @@ const IndexNavbar = () => {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand font-weight-bold" onClick={e => gotoSection(e, null, true)} href="#">Logo</NavbarBrand>
+            <NavbarBrand id="navbar-brand font-weight-bold" href="#headersection">Logo</NavbarBrand>
 
             <button
               className="navbar-toggler navbar-toggler"
