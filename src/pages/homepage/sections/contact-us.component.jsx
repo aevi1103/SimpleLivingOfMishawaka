@@ -10,8 +10,6 @@ import{
   Col
 } from "reactstrap";
 
-import ScrollableAnchor from 'react-scrollable-anchor';
-
 const ContactUs = () => {
 
     const [firstFocus, setFirstFocus] = React.useState(false);
