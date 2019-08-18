@@ -5955,7 +5955,7 @@ td.rdtYear:hover {
 @media screen and (max-width: 991px) {
   .sidebar-collapse .navbar-collapse:before {
     background: #2CA8FF;
-    background: linear-gradient(#2CA8FF, #2c2c2c 80%); } }
+    background: linear-gradient(#E3E3E3, #DDDDDD 80%); } }
 
 @media screen and (max-width: 768px) {
   .nav-tabs {

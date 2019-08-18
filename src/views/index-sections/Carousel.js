@@ -54,7 +54,6 @@ function CarouselSection() {
     setActiveIndex(newIndex);
   };
   return (
-    <>
       <div className="section" id="carousel">
         <Container>
           <div className="title">
@@ -115,7 +114,6 @@ function CarouselSection() {
           </Row>
         </Container>
       </div>
-    </>
   );
 }
 

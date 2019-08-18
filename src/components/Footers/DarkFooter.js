@@ -12,26 +12,17 @@ function DarkFooter() {
           <ul>
             <li>
               <a
-                href="https://www.creative-tim.com?ref=nukr-dark-footer"
+                href="#"
                 target="_blank"
               >
-                Creative Tim
+                Simple Living of Mishawaka Assisted Living Care Facility
               </a>
             </li>
             <li>
               <a
-                href="http://presentation.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
+                to="#"
               >
                 About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://blog.creative-tim.com?ref=nukr-dark-footer"
-                target="_blank"
-              >
-                Blog
               </a>
             </li>
           </ul>
@@ -39,19 +30,11 @@ function DarkFooter() {
         <div className="copyright" id="copyright">
           © {new Date().getFullYear()}, Designed by{" "}
           <a
-            href="https://www.invisionapp.com?ref=nukr-dark-footer"
+            href="#"
             target="_blank"
           >
-            Invision
-          </a>
-          . Coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=nukr-dark-footer"
-            target="_blank"
-          >
-            Creative Tim
-          </a>
-          .
+            Aebbie Rontos
+          </a>.
         </div>
       </Container>
     </footer>
