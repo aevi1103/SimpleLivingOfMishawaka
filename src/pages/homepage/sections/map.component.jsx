@@ -8,8 +8,7 @@ const mapStyles = {
     height: '100%',
     margin: 0,
     padding: 0,
-    position: 'relative',
-    left: '-16px'
+    position: 'relative'
   };
 
 class GoogleMap extends React.Component {

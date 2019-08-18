@@ -140,7 +140,7 @@ const ContactUs = () => {
             
           </Col>
 
-          <Col className="mt-3" style={{height: '600px'}}>
+          <Col lg={12} md={12} className="mt-3 ml-0 mr-0 p-0" style={{height: '600px'}}>
               <GoogleMap/>
           </Col>
         </Row>
