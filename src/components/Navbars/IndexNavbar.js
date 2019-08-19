@@ -2,7 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 
 import smoothscroll from 'smoothscroll-polyfill';
-import Logo from '../../assets/img/living-care/logo.png'
+import Logo from '../../assets/img/living-care/home-care-logo.svg'
 
 // reactstrap components
 import {

@@ -29,7 +29,7 @@ import 'tachyons'
 
 // pages for this kit
 // import Index from "views/Index.js";
-// import NucleoIcons from "views/NucleoIcons.js";
+import NucleoIcons from "views/NucleoIcons.js";
 // import LoginPage from "views/examples/LoginPage.js";
 // import LandingPage from "views/examples/LandingPage.js";
 // import ProfilePage from "views/examples/ProfilePage.js";
@@ -57,6 +57,11 @@ ReactDOM.render(
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
 
         <Route exact path="/homepage" component={HomePage} /> */}
+
+        <Route
+        path="/nucleo-icons"
+        render={props => <NucleoIcons {...props} />}
+      />
 
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />

@@ -5,15 +5,19 @@ import React from "react";
 import { Container } from "reactstrap";
 // core components
 
-import desktopImage from '../../assets/img/living-care/desktop-image.jpg'
-import mobileImage from '../../assets/img/living-care/mobile-image.jpg'
+import DesktopImage from '../../assets/img/living-care/desktop-image.jpg'
+import MobileImage from '../../assets/img/living-care/mobile-image.jpg'
+import Logo from '../../assets/img/living-care/home-care-logo.png'
 
-function IndexHeader() {
+import './indexHeader.styles.scss'
+
+const IndexHeader= () => {
 
   let pageHeader = React.createRef();
 
   const [windowWidth, setWindowWidth ] = React.useState(window.innerWidth);
-  const imageUrl = windowWidth >= 650 ? desktopImage : mobileImage;
+  const imageUrl = windowWidth >= 650 ? DesktopImage : MobileImage;
+
   const handleWindowResize = () => {
     setWindowWidth(window.innerWidth);
   };
@@ -58,10 +62,11 @@ function IndexHeader() {
           <div className="content-center brand">
             <img
               alt="..."
-              className="n-logo"
-              src={require("assets/img/now-logo.png")}
+              src={Logo}
+              style={{height: '18em', size: '50em'}}
             ></img>
-            <h1 className="h1-seo display-1 fo">Simple Living of Mishawaka</h1>
+            
+            <h1 className='h1-seo'>Simple Living of Mishawaka</h1>
             <h3>Residential Assited Living Care Facility</h3>
             
           </div>
