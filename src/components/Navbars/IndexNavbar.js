@@ -2,6 +2,7 @@ import React from "react";
 // import { Link } from "react-router-dom";
 
 import smoothscroll from 'smoothscroll-polyfill';
+import Logo from '../../assets/img/living-care/logo.png'
 
 // reactstrap components
 import {
@@ -65,7 +66,13 @@ const IndexNavbar = () => {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand font-weight-bold" href="#headersection">Logo</NavbarBrand>
+            <NavbarBrand
+              id="navbar-brand font-weight-bold"
+              href="#headersection"
+              src={Logo}
+            >
+              Logo
+            </NavbarBrand>
 
             <button
               className="navbar-toggler navbar-toggler"
@@ -89,28 +96,40 @@ const IndexNavbar = () => {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink href="#" onClick={e => gotoSection(e, 'aboutsection')}>
-                  <i className="now-ui-icons business_badge" />
-                  <p>ABOUT US</p>
-                </NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="#" onClick={e => gotoSection(e, 'servicesection')}>
-                  <i className="now-ui-icons business_briefcase-24" />
-                  <p>OUR SERVICES</p>
-                </NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href="#" onClick={e => gotoSection(e, 'gallerysection')}>
+                <NavLink
+                  href="#"
+                  onClick={e => gotoSection(e, "gallerysection")}
+                >
                   <i className="now-ui-icons business_briefcase-24" />
                   <p>GALLERY</p>
                 </NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="#" onClick={e => gotoSection(e, 'contactussection')}>
+                <NavLink
+                  href="#"
+                  onClick={e => gotoSection(e, "aboutsection")}
+                >
+                  <i className="now-ui-icons business_badge" />
+                  <p>ABOUT US</p>
+                </NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink
+                  href="#"
+                  onClick={e => gotoSection(e, "servicesection")}
+                >
+                  <i className="now-ui-icons business_briefcase-24" />
+                  <p>OUR SERVICES</p>
+                </NavLink>
+              </NavItem>
+
+              <NavItem>
+                <NavLink
+                  href="#"
+                  onClick={e => gotoSection(e, "contactussection")}
+                >
                   <i className="now-ui-icons ui-1_send" />
                   <p>CONTACT US</p>
                 </NavLink>
@@ -125,7 +144,6 @@ const IndexNavbar = () => {
                   Like us on Facebook
                 </UncontrolledTooltip>
               </NavItem>
-
             </Nav>
           </Collapse>
         </Container>
